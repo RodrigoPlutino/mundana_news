@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscribirse</title>
+    <meta name="description" content="noTIcias - Información de tecnología y general en Internet. Noticias de Argentina y del mundo.">
+    <meta name="keywords" content="IT, diario, argentina, noticias, tecnología, programación, información, política, economía, finanzas, deportes, futbol, tenis, rugby, basquetbol, voleibol, formula 1, cultura, espectáculos, cine, teatro, televisión, humor, juegos, horóscopo, clima, pronostico, mapa, vinos, restaurantes, quiniela, loteria, nik, criptograma literario, liniers, internacional, el mundo, ciencia, últimas noticias, clasificados">
+    <link rel="StyleSheet" href="../css/Stylesheet.css" type="text/css" /> 
+    <link rel="StyleSheet" href="../css/bootstrap.min.css" type="text/css" /> 
+    <link rel="StyleSheet" href="../css/bootstrap-resp" type="text/css" /> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <script href="Js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="index__header py-4">
+        <div class="col-12 index__header__element--center">
+          <a class="blog-header-logo text-dark" href="../index.html"><h1>NOTICIAS</h1></a>
+        </div>
+
+    </header>
+  </div>
+
+
+    
+<div class="container">
+  <main>
+    <div class="col-12 py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="../Img/logo.png" alt="" width="72" height="57">
+      <h2>Suscripción</h2>
+      <p class="lead">Complete los datos requeridos para finalizar su suscripción</p>
+    </div>
+
+
+
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Datos personales</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nombre/s</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Se requiere un nombre válido.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Se requiere un apellido válido.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Nombre de Usuario</label>
+              <div class="input-group">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="username" placeholder="Ejemplo: Juancruz123" required>
+              <div class="invalid-feedback">
+                Se requiere un nombre de usuario válido.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="tunombre@ejemplo.com">
+              <div class="invalid-feedback">
+                Se requiere un email válido.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Dirección</label>
+              <input type="text" class="form-control" id="address" placeholder="Tu Casa 1234" required>
+              <div class="invalid-feedback">
+                Por favor completá tus datos de domicilio.
+              </div>
+            </div>
+
+            <div class="col-md-5" >
+              <label for="country" class="form-label">País</label>
+              <select class="form-select" id="country" required>
+                <option value="">--</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Mexico">Mexico</option>
+              </select>
+              <div class="invalid-feedback">
+                Se requiere un elegir un país.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Código Postal</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Se requiere un codigo postal válido.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">La dirección de entrega es la misma que la de facturación</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Guardar esta información para otro momento</label>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Datos de pago</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Tarjeta de crédito</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Tarjeta de débito</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Nombre en la tarjeta</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Nombre impreso en la tarjeta</small>
+              <div class="invalid-feedback">
+                Se requiere un nombre válido.
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Número de la tarjeta</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Se requiere un número válido.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Fecha de vencimiento</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Se requiere una fecha de vencimiento válida.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">Cod. de seguridad</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Se requiere un código de seguridad.
+              </div>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <button class="w-100 btn btn-secondary btn-lg" type="submit">Finalizar suscripción</button>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; NOTINSTA</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+
+</body>
