@@ -57,10 +57,24 @@
 .footer {
   margin-top: 10%; }
 
-.nav-bar {
+.navbar {
   padding: 7%;
   text-align: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center; }
+
+.nav-h2 {
+  font-size: medium; }
+
+.nav__element--right {
+  display: flex;
+  justify-content: end;
+  align-items: center; }
+
+.nav__element--left {
+  display: flex;
+  justify-content: end;
+  align-items: center; }
 
 .index__header__elements {
   justify-content: space-between;
@@ -71,12 +85,9 @@
 .index__header__element--center {
   text-align: center; }
 
-.index__header__element--right {
-  justify-content: end;
-  align-items: center; }
-
-.card-section {
-  margin-top: 5%; }
-
 .carousel-index {
   justify-content: center; }
+
+.BreakingNews_title {
+  margin: 5% 0 5% 0;
+  text-align: center; }

@@ -1,7 +1,8 @@
-.nav-bar {
+.navbar {
     padding: 7%;
     text-align: center;
     justify-content: space-around;
+    align-items: center;
 }
 
 .nav-element {
@@ -12,6 +13,23 @@
     
 }
 
+.nav-h2 {
+    font-size: medium;
+}
+
+.nav__element--right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.nav__element--left {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
 .index__header__elements {
     justify-content: space-between;
     align-items: center;
@@ -19,28 +37,27 @@
     wrap: none;
 }
 
-.index__header__element--left {
 
-}
 
 .index__header__element--center {
     text-align: center;
 }
 
-.index__header__element--right {
-    justify-content: end;
-    align-items: center;
 
-}
 .card-index{
     
 }
 
 .card-section {
-    margin-top: 5%
+    
 }
 
 
 .carousel-index {
     justify-content: center;
+}
+
+.BreakingNews_title {
+    margin: 5% 0 5% 0;
+    text-align: center;
 }
