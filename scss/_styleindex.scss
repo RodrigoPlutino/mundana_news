@@ -30,8 +30,13 @@ body {
     text-align: center;
 }
 
+.dropdown {
+    text-align: center;
+}
 .dropdown-menu {
-    background-color: rgba(0, 0, 0, 0.692) !important; }
+    background-color: rgba(0, 0, 0, 0.692) !important;
+    text-align: center;
+}
 
 .dropdown-menu :hover {
     background-color: rgba(0, 0, 0, 0.692) !important; }

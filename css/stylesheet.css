@@ -193,7 +193,7 @@
 @media (max-width: 992px) {
   .header-content-ingresar h1 {
     font-size: 50px;
-    margin-top: 9rem; }
+    margin-top: 3rem; }
   .content {
     display: none; } }
 
@@ -242,8 +242,12 @@ body {
   color: rgba(255, 255, 255, 0.788) !important;
   text-align: center; }
 
+.dropdown {
+  text-align: center; }
+
 .dropdown-menu {
-  background-color: rgba(0, 0, 0, 0.692) !important; }
+  background-color: rgba(0, 0, 0, 0.692) !important;
+  text-align: center; }
 
 .dropdown-menu :hover {
   background-color: rgba(0, 0, 0, 0.692) !important; }
