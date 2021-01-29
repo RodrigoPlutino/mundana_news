@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="styleSheet" href="css/stylesheet.css"/> 
-    <link rel="styleSheet" href="css/bootstrap.min.css"/> 
+    <link rel="stylesheet" href="css/stylesheet.css"/> 
+    <link rel="stylesheet" href="css/bootstrap.min.css"/> 
     <title>MUNDANA - Inicio </title>
-    <meta name="description" content="noTIcias - Información de tecnología y general en Internet. Noticias de Argentina y del mundo.">
+    <meta name="description" content="Noticias - Información de tecnología y general en Internet. Noticias de Argentina y del mundo.">
     <meta name="keywords" content="IT, diario, argentina, noticias, tecnología, programación, información, política, economía, finanzas, deportes, futbol, tenis, rugby, basquetbol, voleibol, formula 1, cultura, espectáculos, cine, teatro, televisión, humor, juegos, horóscopo, clima, pronostico, mapa, vinos, restaurantes, quiniela, loteria, nik, criptograma literario, liniers, internacional, el mundo, ciencia, últimas noticias, clasificados">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap" rel="stylesheet">
     <script href="Js/bootstrap.min.js"></script>
     
     
@@ -69,7 +71,7 @@
                   <a class="nav-link" href="./Pages/Suscribirse.html">SUSCRIBIRSE</a>
                 </div>
 
-                <div class="nav-item dropdown col-md-4">
+                <div class="nav-item dropdown col-md-4 justify-content-end">
                   <a class="btn btn-outline-secondary" href="./Pages/Ingresar.html">INGRESAR</a>
                 </div>
 
@@ -87,8 +89,6 @@
           <div class="header-overlay"></div>
           <div class="header-content header">
             <h1><strong>MUNDANA</strong></h1>
-            <h2>El mundo, a tan solo un click</h2>
-            
             <nav class="navbar navbar_secondary navbar-expand-lg">
               <div class="justify-content-start container-fluid">
                 <a class="navbar-brand col-md-3" href="#">TÓPICOS</a>
@@ -121,7 +121,7 @@
 
       </div>
 
-  <section class="BreakingNews">
+  <section class="BreakingNews container-fluid">
 
       <h3 class="BreakingNews_title">Noticias de ultimo momento..</h3>
 
@@ -135,18 +135,29 @@
                   <p class="card-text">La irrupción en el Capitolio indica un comienzo de año complicado en Estados Unidos.</p>
                 </div>
               </div>
-              <div class="row card-section">
-                <div class="col-12 col-md-6">
-                  <a href="./Pages/Noticia1.html"><div class="card">
-                    <img src="./Img/caso_trump.jpg" class="card-img-top" alt="Imagen Capitolio">
-                    <div class="card-body">
-                      <h5 class="card-title">Tensión en EE.UU.: qué se sabe de la toma del Capitolio y cómo sigue el traspaso de poder</h5>
-                    </a>
-                      <p class="card-text">La irrupción en el Capitolio indica un comienzo de año complicado en Estados Unidos.</p>
-                    </div>
-                  </div>
             </div>
-            <div class="col-12 col-md-6">
+
+            <div class="col-6 col-md-6">
+              <a href="./Pages/Noticia1.html"><div class="card">
+                <img src="./Img/caso_trump.jpg" class="card-img-top" alt="Imagen Capitolio">
+                <div class="card-body">
+                  <h5 class="card-title">Tensión en EE.UU.: qué se sabe de la toma del Capitolio y cómo sigue el traspaso de poder</h5>
+                </a>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ipsa laboriosam unde explicabo eligendi qui itaque iusto harum optio quidem sapiente, sit, voluptas veritatis. Fugiat maiores quas nihil debitis ratione exercitationem quae nostrum quibusdam ut, sapiente suscipit quidem illo pariatur.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="card">
+                <img src="./Img/cristina.jpg" class="card-img-top" alt="Cristina Fernandez de Kirchner">
+                <div class="card-body">
+                  <h5 class="card-title">Cristina es procesada y se le asignará una fecha para presentarse en tribunales</h5>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere, asperiores quaerat laudantium praesentium officia minus quidem? Accusantium sed nihil pariatur sapiente magnam aliquid itaque quidem veniam harum? Porro eligendi quibusdam at non ullam, fuga nihil ab necessitatibus obcaecati rem molestias! Cumque a voluptatibus</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-3">
               <div class="card">
                 <img src="./Img/cristina.jpg" class="card-img-top" alt="Cristina Fernandez de Kirchner">
                 <div class="card-body">
@@ -155,51 +166,32 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-6 col-md-3">
               <a href="./Pages/Noticia1.html"><div class="card">
                 <img src="./Img/caso_trump.jpg" class="card-img-top" alt="Imagen Capitolio">
                 <div class="card-body">
                   <h5 class="card-title">Tensión en EE.UU.: qué se sabe de la toma del Capitolio y cómo sigue el traspaso de poder</h5>
                 </a>
-                  <p class="card-text">La irrupción en el Capitolio indica un comienzo de año complicado en Estados Unidos.</p>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum ipsa laboriosam unde explicabo eligendi qui itaque iusto harum optio quidem sapiente, sit, voluptas veritatis. Fugiat maiores quas nihil debitis ratione exercitationem quae nostrum quibusdam ut, sapiente suscipit quidem illo pariatur.</p>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-6 col-md-3">
               <div class="card">
                 <img src="./Img/cristina.jpg" class="card-img-top" alt="Cristina Fernandez de Kirchner">
                 <div class="card-body">
                   <h5 class="card-title">Cristina es procesada y se le asignará una fecha para presentarse en tribunales</h5>
-                  <p class="card-text">La ex presidenta y actual vice presidenta de La Nación es procesada por más de tres causas en su contra.</p>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex facere, asperiores quaerat laudantium praesentium officia minus quidem? Accusantium sed nihil pariatur sapiente magnam aliquid itaque quidem veniam harum? Porro eligendi quibusdam at non ullam, fuga nihil ab necessitatibus obcaecati rem molestias! Cumque a voluptatibus</p>
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6">
-              <a href="./Pages/Noticia1.html"><div class="card">
-                <img src="./Img/caso_trump.jpg" class="card-img-top" alt="Imagen Capitolio">
-                <div class="card-body">
-                  <h5 class="card-title">Tensión en EE.UU.: qué se sabe de la toma del Capitolio y cómo sigue el traspaso de poder</h5>
-                </a>
-                  <p class="card-text">La irrupción en el Capitolio indica un comienzo de año complicado en Estados Unidos.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div class="card">
-                <img src="./Img/cristina.jpg" class="card-img-top" alt="Cristina Fernandez de Kirchner">
-                <div class="card-body">
-                  <h5 class="card-title">Cristina es procesada y se le asignará una fecha para presentarse en tribunales</h5>
-                  <p class="card-text">La ex presidenta y actual vice presidenta de La Nación es procesada por más de tres causas en su contra.</p>
-                </div>
-              </div>
-            </div>
-
+            
   
         </section>
 
         
 
-            <footer class="row footer justify-content-end">
+            <div class="row footer container-fluid justify-content-center">
               <nav aria-label="Page navigation example">
                 <ul class="pagination">
                   <li class="page-item disabled">
@@ -213,11 +205,63 @@
                   </li>
                 </ul>
               </nav>
+            </div>
+
+
+            <footer class="footer-distributed">
+
+              <div class="footer-left">
+
+                <h3 style="font-family: 'Didact Gothic', sans-serif">MUNDANA</h3>
+
+                <p class="footer-links">
+                  <a href="index.html">Inicio</a>
+                  ·
+                  <a href="Pages/Ingresar.html">Ingresar</a>
+                  ·
+                  <a href="Pages/Suscribirse.html">Suscribirse</a>
+                </p>
+
+                <p class="footer-company-name">Rodrigo Plutino - 2021</p>
+              </div>
+
+              <div class="footer-center">
+
+                <div>
+                  <i class="fa fa-map-marker"></i>
+                  <p><span>Rodrigo Plutino</span> Lanus, Buenos Aires - Argentina</p>
+                </div>
+
+                <div>
+                  <i class="fa fa-phone"></i>
+                  <p>11 7367 5464</p>
+                </div>
+
+                <div>
+                  <i class="fa fa-envelope"></i>
+                  <p><a href="mailto:rodrigoplutino@gmail.com">rodrigoplutino@gmail.com</a></p>
+                </div>
+
+              </div>
+
+              <div class="footer-right">
+
+                <p class="footer-company-about">
+                  <span>Sobre la página</span>
+                    Proyecto realizado de forma individual, en el trayecto de un mes, para ser entregado a modo de trabajo final en CODERHAUSE.
+                </p>
+
+                <div class="footer-icons">
+
+                  <a href="#"><img src="img/instagram.svg" alt="facebook" class="fa fa-instagram"></a>
+                  <a href="#"><img src="img/linkedin.svg" alt="Linkedin" class="fa fa-linkedin"></a>
+                  <a href="#"><img src="img/github.svg" alt="Github" class="fa fa-github"></a>
+
+                </div>
+
+              </div>
+
             </footer>
-
-
-            
-    </div>
 
 
 
