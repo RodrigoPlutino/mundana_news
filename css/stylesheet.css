@@ -198,11 +198,10 @@
     display: none; } }
 
 .noticia {
-  margin: 5%; }
+  margin: 0px 45px 45px 0px; }
 
 .noticia_titulo-especial {
-  text-align: center;
-  text-decoration: underline; }
+  font-family: 'Merriweather', serif; }
 
 .noticia_portada {
   margin-bottom: 5%; }
@@ -210,11 +209,53 @@
 .noticia_portada_imagen {
   width: 100%;
   height: 100%;
-  box-shadow: 5px 5px 5px black;
   margin-bottom: 1%; }
 
-.footer {
-  margin-top: 10%; }
+.grid-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 33% 33% 33%;
+  gap: 10px 15px;
+  grid-template-areas: "news-pic news-pic news-pic news-banner-right" "news-pic news-pic news-pic news-banner-right" "news-body news-body news-body ."; }
+
+.news-pic {
+  grid-area: news-pic;
+  margin-left: 45px; }
+
+.news-banner-right {
+  grid-area: news-banner-right;
+  margin: 45px; }
+
+.news-body {
+  grid-area: news-body;
+  margin: 25px 0px 0px 45px;
+  font-size: 20px; }
+
+.news-body p {
+  width: 75%;
+  height: 100%;
+  margin-top: -95px; }
+
+.news-body .none {
+  width: 100%;
+  margin-top: 0px; }
+
+@media (max-width: 768px) {
+  .grid-container {
+    display: none; }
+  .noticia {
+    margin: 0%; }
+  .noticia_titulo-especial {
+    font-size: 25px;
+    margin: 15px 0px; }
+  .news-body-rsp {
+    font-size: 20px; }
+  .news-body {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .container {
+    display: none; } }
 
 body {
   margin: 0;
@@ -307,8 +348,12 @@ body {
 .BreakingNews_title {
   margin: -1% 0 5% 0;
   text-align: center;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 40px; }
+
+.titulo_seccion {
+  margin: 0% 0 0% 2%;
+  font-family: 'Merriweather', serif; }
 
 .card-body .card-title {
   font-family: 'Mukta', sans-serif;
@@ -316,6 +361,15 @@ body {
 
 .card-body .card-text {
   font-family: 'Nunito', sans-serif; }
+
+div a {
+  color: #333; }
+
+div a:hover {
+  color: #333; }
+
+.footer {
+  margin-top: 35px; }
 
 footer {
   position: relative;
@@ -439,7 +493,7 @@ footer {
   width: 70%;
   height: 70%; }
 
-@media (max-width: 880px) {
+@media (max-width: 768px) {
   .footer-distributed {
     font-size: 14px; }
   .footer-distributed .footer-left,
@@ -453,9 +507,7 @@ footer {
     margin-left: 0; }
   .main {
     line-height: normal;
-    font-size: auto; } }
-
-@media (max-width: 992px) {
+    font-size: auto; }
   .navbar_secondary {
     display: none !important; }
   .header-content h1 {

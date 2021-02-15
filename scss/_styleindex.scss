@@ -108,20 +108,28 @@ body {
 .BreakingNews_title {
     margin: -1% 0 5% 0;
     text-align: center;
-    font-family: 'Nunito', sans-serif;
-    font-size: 40px;
+    font-family: 'Merriweather', serif;
+	font-size: 40px;
 }
 
+.titulo_seccion {
+	margin: 0% 0 0% 2%;
+	font-family: 'Merriweather', serif;
+}
 .card-body .card-title{
     font-family: 'Mukta', sans-serif;
     font-weight: 700;
 }
 
 .card-body .card-text{
-    font-family: 'Nunito', sans-serif;
-    
-}
+    font-family: 'Nunito', sans-serif;}
 
+div a { color: #333;}
+
+div a:hover { color: #333;}
+
+.footer {margin-top: 35px;}
+	
 footer{
 	position: relative;
     bottom: 0;
@@ -270,7 +278,7 @@ footer{
 
 }
 
-@media (max-width: 880px) {
+@media (max-width: 768px) {
 
 	.footer-distributed{
 		font-size: 14px;
@@ -293,12 +301,7 @@ footer{
 		line-height: normal;
 		font-size: auto;
 	}
-
-}
-
-
-@media (max-width: 992px) { 
-    .navbar_secondary {
+	.navbar_secondary {
         display: none !important;
     }
     .header-content h1 {
